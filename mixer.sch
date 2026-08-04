@@ -7,8 +7,6 @@ S {}
 E {}
 N 410 -120 410 -90 {
 lab=#net1}
-N 300 -150 370 -150 {
-lab=LO}
 N 300 -60 370 -60 {
 lab=RF}
 N 310 -240 310 -210 {
@@ -23,16 +21,12 @@ N 410 -30 410 -10 {
 lab=VSS}
 N 310 -210 310 -200 {
 lab=IOUT}
-N 410 -60 550 -60 {
+N 410 -60 560 -60 {
 lab=VSS}
-N 410 -150 540 -150 {
+N 410 -150 570 -150 {
 lab=VSS}
-C {ipin.sym} 300 -150 0 0 {name=p1 lab=LO
-}
-C {ipin.sym} 300 -60 0 0 {name=p3 lab=RF
-}
-C {ipin.sym} 300 -60 0 0 {name=p4 lab=RF
-}
+N 280 -150 370 -150 {
+lab=LO}
 C {ipin.sym} 390 -10 0 0 {name=p5 lab=VSS
 }
 C {opin.sym} 310 -240 0 0 {name=p7 lab=IOUT
@@ -65,7 +59,9 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {ipin.sym} 550 -60 0 1 {name=p2 lab=VSS
+C {lab_pin.sym} 570 -150 0 1 {name=p8 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 560 -60 0 1 {name=p2 sig_type=std_logic lab=VSS}
+C {ipin.sym} 280 -150 0 0 {name=p1 lab=LO
 }
-C {ipin.sym} 540 -150 0 1 {name=p6 lab=VSS
+C {ipin.sym} 300 -60 0 0 {name=p3 lab=RF
 }
