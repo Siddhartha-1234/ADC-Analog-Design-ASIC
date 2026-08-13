@@ -6,7 +6,7 @@ V {}
 S {}
 E {}
 N 190 -50 410 -50 {
-lab=#net1}
+lab=INSIG}
 N 370 -100 410 -100 {
 lab=VCC}
 N 380 40 410 40 {
@@ -37,6 +37,16 @@ N 240 -190 280 -190 {
 lab=VCC}
 N 130 -170 280 -170 {
 lab=VSS}
+N -130 10 -110 10 {
+lab=CALIB}
+N -130 30 -110 30 {
+lab=INPUT}
+N -140 -10 -110 -10 {
+lab=THRESHV}
+N -120 -30 -110 -30 {
+lab=VSS}
+N -160 -50 -110 -50 {
+lab=VCC}
 C {/home/ttuser/Documents/ADCAnalogDesign/comparator.sym} 510 -30 0 0 {name=x3}
 C {lab_pin.sym} 370 -100 0 0 {name=p1 sig_type=std_logic lab=VCC}
 C {lab_pin.sym} 380 40 0 0 {name=p2 sig_type=std_logic lab=VSS}
@@ -55,3 +65,25 @@ C {lab_pin.sym} 250 -250 0 0 {name=p9 sig_type=std_logic lab=CALIB
 C {lab_pin.sym} 190 -230 0 0 {name=p10 sig_type=std_logic lab=RESULT}
 C {lab_pin.sym} 240 -190 0 0 {name=p11 sig_type=std_logic lab=VCC}
 C {lab_pin.sym} 130 -170 0 0 {name=p12 sig_type=std_logic lab=VSS}
+C {/home/ttuser/Documents/ADCAnalogDesign/onehot2mux.sym} 40 -10 0 0 {name=x2}
+C {lab_wire.sym} 260 -50 0 0 {name=p13 sig_type=std_logic lab=INSIG}
+C {lab_pin.sym} -130 10 0 0 {name=p14 sig_type=std_logic lab=CALIB
+}
+C {lab_pin.sym} -130 30 0 0 {name=p15 sig_type=std_logic lab=INPUT
+}
+C {lab_pin.sym} -140 -10 0 0 {name=p16 sig_type=std_logic lab=THRESHV
+}
+C {lab_pin.sym} -120 -30 0 0 {name=p17 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} -160 -50 0 0 {name=p18 sig_type=std_logic lab=VCC}
+C {ipin.sym} -210 -310 0 0 {name=p19 lab=VCC
+}
+C {ipin.sym} -210 -280 0 0 {name=p20 lab=VSS}
+C {ipin.sym} -210 -250 0 0 {name=p21 lab=EN_N}
+C {ipin.sym} -210 -220 0 0 {name=p22 lab=CALIB
+}
+C {ipin.sym} -210 -190 0 0 {name=p23 lab=INPUT
+}
+C {opin.sym} -210 -140 0 0 {name=p24 lab=RESULT}
+C {ipin.sym} -210 -160 0 0 {name=p25 lab=THRESHV
+
+}
