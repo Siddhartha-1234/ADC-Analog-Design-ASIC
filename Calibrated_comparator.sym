@@ -33,3 +33,20 @@ T {CALIB} -125 -64 0 0 0.2 0.2 {}
 T {INPUT} -125 36 0 0 0.2 0.2 {}
 T {THRESHV} -125 16 0 0 0.2 0.2 {}
 T {RESULT} 5 26 0 1 0.2 0.2 {}
+C {/home/ttuser/Documents/ADCAnalogDesign/onehot2mux.sym} -650 -40 0 0 {name=x1}
+C {lab_pin.sym} -500 -80 0 1 {name=p1 sig_type=std_logic lab=THRESHV}
+C {ipin.sym} -800 -20 0 0 {name=p2 lab=USEEXT
+}
+C {ipin.sym} -800 -40 0 0 {name=p3 lab=EXTTHRESH}
+C {lab_pin.sym} -800 -80 0 0 {name=p4 sig_type=std_logic lab=VCC}
+C {lab_pin.sym} -800 -60 0 0 {name=p5 sig_type=std_logic lab=VSS
+}
+C {lab_pin.sym} -800 0 0 0 {name=p6 sig_type=std_logic lab=DACOUT}
+C {ipin.sym} -150 -80 0 0 {name=p7 lab=EN_N}
+C {ipin.sym} -150 -60 0 0 {name=p8 lab=CAL}
+C {ipin.sym} -150 40 0 0 {name=p9 lab=INPUT}
+C {lab_pin.sym} -150 20 0 0 {name=p10 sig_type=std_logic lab=THRESH}
+C {lab_pin.sym} -150 120 0 0 {name=p11 sig_type=std_logic lab=VCC
+}
+C {lab_pin.sym} -150 140 0 0 {name=p12 sig_type=std_logic lab=VSS}
+C {opin.sym} 30 30 0 0 {name=p13 sig_type=std_logic lab=COMPOUT}
