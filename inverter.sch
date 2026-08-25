@@ -30,29 +30,15 @@ lab=VDD}
 N 220 -70 290 -70 {
 lab=VDD}
 N 220 100 220 130 {
-lab=VDD}
+lab=VSS}
 N 220 70 280 70 {
-lab=VDD}
+lab=VSS}
 N 280 70 280 110 {
-lab=VDD}
+lab=VSS}
 N 220 110 280 110 {
-lab=VDD}
+lab=VSS}
 C {ipin.sym} 100 10 0 0 {name=p1 lab=IN}
 C {/home/ttuser/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/pfet_01v8.sym} 200 -30 0 0 {name=M3
-L=0.15
-W=1
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {/home/ttuser/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/nfet_01v8.sym} 200 70 0 0 {name=M1
 L=0.15
 W=1
 nf=1
@@ -69,3 +55,17 @@ spiceprefix=X
 C {opin.sym} 240 20 0 0 {name=p2 lab=out}
 C {iopin.sym} 220 -90 0 0 {name=p3 lab=VDD}
 C {iopin.sym} 220 130 0 0 {name=p4 lab=VSS}
+C {/home/ttuser/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/nfet_01v8.sym} 200 70 0 0 {name=M2
+L=0.15
+W=1
+nf=1 
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
