@@ -6,11 +6,11 @@ V {}
 S {}
 E {}
 N -90 -20 -90 30 {
-lab=#net1}
+lab=0}
 N -90 30 120 30 {
-lab=#net1}
+lab=0}
 N 120 -160 120 30 {
-lab=#net1}
+lab=0}
 N 120 -320 120 -220 {
 lab=A}
 N -90 -320 120 -320 {
@@ -41,3 +41,7 @@ C {lab_pin.sym} 120 -320 0 1 {name=p1 sig_type=std_logic lab=A}
 C {lab_pin.sym} -90 -100 2 1 {name=p2 sig_type=std_logic lab=C}
 C {lab_pin.sym} -90 -210 0 0 {name=p3 sig_type=std_logic lab=B}
 C {lab_pin.sym} 120 30 2 0 {name=p4 sig_type=std_logic lab=0}
+C {code.sym} 250 -200 0 0 {name=STIMULI only_toplevel=false value="
+.tran 10n 2000u uic
+.save all
+"}
