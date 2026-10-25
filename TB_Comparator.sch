@@ -42,7 +42,7 @@ C {lab_pin.sym} 90 -360 0 0 {name=p16 sig_type=std_logic lab=MINUS}
 C {code_shown.sym} 790 -470 0 0 {name=SPICE only_toplevel=false value=".control
 save all
 dc V3 -1.4 1.4 0.01
-plot v(DIFFOUT) v(PLUS) v(ADJ)
+plot v(DIFFOUT) v(PLUS) v(ADJ) v(x1.G1)
 .endc
 "}
 C {vsource.sym} 0 -480 0 0 {name=V3 value=0 savecurrent=false}
