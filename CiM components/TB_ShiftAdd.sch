@@ -10,7 +10,7 @@ cycle 1: IN0=1.2, IN1=0.9 -> SUM = 1.0 V
 cycle 2: IN0=0.9, IN1=1.2 -> SUM = 1.1 V
 cycle 3: IN0=IN1=0.3 -> SUM = 0.3 V
 Measured values (sum1..sum3) differ slightly because of CL, switch charge injection and parasitics.} 400 -140 0 0 0.3 0.3 {}
-C {/home/ttuser/Documents/ADCAnalogDesign/shift_add_2col.sym} 400 -300 0 0 {name=x1}
+C {/home/ttuser/Documents/ADCAnalogDesign/CiM components/shift_add_2col.sym} 400 -300 0 0 {name=x1}
 C {lab_pin.sym} 300 -380 0 0 {name=p1 sig_type=std_logic lab=VCC}
 C {lab_pin.sym} 300 -360 0 0 {name=p2 sig_type=std_logic lab=VSS}
 C {lab_pin.sym} 300 -340 0 0 {name=p3 sig_type=std_logic lab=VREF}
