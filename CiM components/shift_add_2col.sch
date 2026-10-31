@@ -5,56 +5,111 @@ K {}
 V {}
 S {}
 E {}
-T {2-column analog shift-add block (charge sharing), 
-RST=1: SUM and both bottom plates tied to VREF.  SHARE=1: bottom plates driven by column voltages IN0 (LSB, C) and IN1 (MSB, 2C).
-SUM = VREF + (C*(IN0-VREF) + 2C*(IN1-VREF)) / 3C   (SUM floats during SHARE; keep RST and SHARE non-overlapping)} -400 -600 0 0 0.3 0.3 {}
-N 20 -330 120 -330 {}
-N 120 -330 220 -330 {}
-N 120 -360 120 -330 {}
-N 20 -270 120 -270 {}
-N 120 -270 220 -270 {}
-N 120 -270 120 -240 {}
-N 20 -300 60 -300 {}
-N 220 -300 260 -300 {}
-N 520 -330 620 -330 {}
-N 620 -330 720 -330 {}
-N 620 -360 620 -330 {}
-N 520 -270 620 -270 {}
-N 620 -270 720 -270 {}
-N 620 -270 620 -240 {}
-N 520 -300 560 -300 {}
-N 720 -300 760 -300 {}
-N 1020 -330 1120 -330 {}
-N 1120 -330 1220 -330 {}
-N 1120 -360 1120 -330 {}
-N 1020 -270 1120 -270 {}
-N 1120 -270 1220 -270 {}
-N 1120 -270 1120 -240 {}
-N 1020 -300 1060 -300 {}
-N 1220 -300 1260 -300 {}
-N 20 -130 120 -130 {}
-N 120 -130 220 -130 {}
-N 120 -160 120 -130 {}
-N 20 -70 120 -70 {}
-N 120 -70 220 -70 {}
-N 120 -70 120 -40 {}
-N 20 -100 60 -100 {}
-N 220 -100 260 -100 {}
-N 520 -130 620 -130 {}
-N 620 -130 720 -130 {}
-N 620 -160 620 -130 {}
-N 520 -70 620 -70 {}
-N 620 -70 720 -70 {}
-N 620 -70 620 -40 {}
-N 520 -100 560 -100 {}
-N 720 -100 760 -100 {}
-N 1000 -160 1000 -130 {}
-N 1000 -70 1000 -40 {}
-N 1200 -160 1200 -130 {}
-N 1200 -70 1200 -40 {}
-N 1400 -160 1400 -130 {}
-N 1400 -70 1400 -40 {}
-C {/home/ttuser/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/nfet_01v8.sym} 0 -300 0 0 {name=M1
+T {RST=1: SUM and both bottom plates tied to VREF.  SHARE=1: bottom plates driven by column voltages IN0 (LSB, C) and IN1 (MSB, 2C).
+SUM = VREF + (C*(IN0-VREF) + 2C*(IN1-VREF)) / 3C } -400 -600 0 0 0.3 0.3 {}
+N 30 -430 130 -430 {
+lab=IN0}
+N 130 -430 230 -430 {
+lab=IN0}
+N 130 -460 130 -430 {
+lab=IN0}
+N 30 -370 130 -370 {
+lab=BP0}
+N 130 -370 230 -370 {
+lab=BP0}
+N 130 -370 130 -340 {
+lab=BP0}
+N 30 -400 70 -400 {
+lab=VSS}
+N 230 -400 270 -400 {
+lab=VCC}
+N 430 -430 530 -430 {
+lab=VREF}
+N 530 -430 630 -430 {
+lab=VREF}
+N 530 -460 530 -430 {
+lab=VREF}
+N 430 -370 530 -370 {
+lab=BP0}
+N 530 -370 630 -370 {
+lab=BP0}
+N 530 -370 530 -340 {
+lab=BP0}
+N 430 -400 470 -400 {
+lab=VSS}
+N 630 -400 670 -400 {
+lab=VCC}
+N 530 110 630 110 {
+lab=VREF}
+N 430 110 530 110 {
+lab=VREF}
+N 530 110 530 140 {
+lab=VREF}
+N 530 50 630 50 {
+lab=SUM}
+N 430 50 530 50 {
+lab=SUM}
+N 530 20 530 50 {
+lab=SUM}
+N 590 80 630 80 {
+lab=VSS}
+N 390 80 430 80 {
+lab=VCC}
+N 860 -460 960 -460 {
+lab=IN1}
+N 960 -460 1060 -460 {
+lab=IN1}
+N 960 -490 960 -460 {
+lab=IN1}
+N 860 -400 960 -400 {
+lab=BP1}
+N 960 -400 1060 -400 {
+lab=BP1}
+N 960 -400 960 -370 {
+lab=BP1}
+N 860 -430 900 -430 {
+lab=VSS}
+N 1060 -430 1100 -430 {
+lab=VCC}
+N 1360 -460 1460 -460 {
+lab=VREF}
+N 1460 -460 1560 -460 {
+lab=VREF}
+N 1460 -490 1460 -460 {
+lab=VREF}
+N 1360 -400 1460 -400 {
+lab=BP1}
+N 1460 -400 1560 -400 {
+lab=BP1}
+N 1460 -400 1460 -370 {
+lab=BP1}
+N 1360 -430 1400 -430 {
+lab=VSS}
+N 1560 -430 1600 -430 {
+lab=VCC}
+N 340 -80 340 -50 {
+lab=SUM}
+N 340 -170 340 -140 {
+lab=BP0}
+N 1280 -190 1280 -160 {
+lab=SUM}
+N 1280 -280 1280 -250 {
+lab=BP1}
+N 1080 -190 1080 -160 {
+lab=SUM}
+N 1080 -280 1080 -250 {
+lab=BP1}
+N 130 -340 530 -340 {
+lab=BP0}
+N 340 -340 340 -170 {
+lab=BP0}
+N 960 -370 1460 -370 {
+lab=BP1}
+N 1080 -280 1280 -280 {
+lab=BP1}
+N 1200 -370 1200 -280 {
+lab=BP1}
+C {/home/ttuser/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/nfet_01v8.sym} 10 -400 0 0 {name=M1
 L=0.15
 W=1
 nf=1
@@ -68,7 +123,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {/home/ttuser/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/pfet_01v8.sym} 200 -300 0 0 {name=M2
+C {/home/ttuser/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/pfet_01v8.sym} 210 -400 0 0 {name=M2
 L=0.15
 W=2
 nf=1
@@ -82,13 +137,12 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {lab_pin.sym} 120 -360 0 0 {name=p1 sig_type=std_logic lab=IN0}
-C {lab_pin.sym} 120 -240 0 0 {name=p2 sig_type=std_logic lab=BP0}
-C {lab_pin.sym} -20 -300 0 0 {name=p3 sig_type=std_logic lab=SHARE}
-C {lab_pin.sym} 180 -300 0 0 {name=p4 sig_type=std_logic lab=SHARE_N}
-C {lab_pin.sym} 60 -300 0 1 {name=p5 sig_type=std_logic lab=VSS}
-C {lab_pin.sym} 260 -300 0 1 {name=p6 sig_type=std_logic lab=VCC}
-C {/home/ttuser/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/nfet_01v8.sym} 500 -300 0 0 {name=M3
+C {lab_pin.sym} 130 -460 0 0 {name=p1 sig_type=std_logic lab=IN0}
+C {lab_pin.sym} -10 -400 0 0 {name=p3 sig_type=std_logic lab=SHARE}
+C {lab_pin.sym} 190 -400 0 0 {name=p4 sig_type=std_logic lab=SHARE_N}
+C {lab_pin.sym} 70 -400 0 1 {name=p5 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 270 -400 0 1 {name=p6 sig_type=std_logic lab=VCC}
+C {/home/ttuser/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/nfet_01v8.sym} 410 -400 0 0 {name=M3
 L=0.15
 W=1
 nf=1
@@ -102,7 +156,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {/home/ttuser/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/pfet_01v8.sym} 700 -300 0 0 {name=M4
+C {/home/ttuser/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/pfet_01v8.sym} 610 -400 0 0 {name=M4
 L=0.15
 W=2
 nf=1
@@ -116,13 +170,12 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {lab_pin.sym} 620 -360 0 0 {name=p7 sig_type=std_logic lab=VREF}
-C {lab_pin.sym} 620 -240 0 0 {name=p8 sig_type=std_logic lab=BP0}
-C {lab_pin.sym} 480 -300 0 0 {name=p9 sig_type=std_logic lab=RST}
-C {lab_pin.sym} 680 -300 0 0 {name=p10 sig_type=std_logic lab=RST_N}
-C {lab_pin.sym} 560 -300 0 1 {name=p11 sig_type=std_logic lab=VSS}
-C {lab_pin.sym} 760 -300 0 1 {name=p12 sig_type=std_logic lab=VCC}
-C {/home/ttuser/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/nfet_01v8.sym} 1000 -300 0 0 {name=M5
+C {lab_pin.sym} 530 -460 0 0 {name=p7 sig_type=std_logic lab=VREF}
+C {lab_pin.sym} 390 -400 0 0 {name=p9 sig_type=std_logic lab=RST}
+C {lab_pin.sym} 590 -400 0 0 {name=p10 sig_type=std_logic lab=RST_N}
+C {lab_pin.sym} 470 -400 0 1 {name=p11 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 670 -400 0 1 {name=p12 sig_type=std_logic lab=VCC}
+C {/home/ttuser/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/nfet_01v8.sym} 650 80 2 0 {name=M5
 L=0.15
 W=1
 nf=1
@@ -136,7 +189,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {/home/ttuser/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/pfet_01v8.sym} 1200 -300 0 0 {name=M6
+C {/home/ttuser/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/pfet_01v8.sym} 450 80 2 0 {name=M6
 L=0.15
 W=2
 nf=1
@@ -150,13 +203,13 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {lab_pin.sym} 1120 -360 0 0 {name=p13 sig_type=std_logic lab=VREF}
-C {lab_pin.sym} 1120 -240 0 0 {name=p14 sig_type=std_logic lab=SUM}
-C {lab_pin.sym} 980 -300 0 0 {name=p15 sig_type=std_logic lab=RST}
-C {lab_pin.sym} 1180 -300 0 0 {name=p16 sig_type=std_logic lab=RST_N}
-C {lab_pin.sym} 1060 -300 0 1 {name=p17 sig_type=std_logic lab=VSS}
-C {lab_pin.sym} 1260 -300 0 1 {name=p18 sig_type=std_logic lab=VCC}
-C {/home/ttuser/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/nfet_01v8.sym} 0 -100 0 0 {name=M7
+C {lab_pin.sym} 530 140 2 0 {name=p13 sig_type=std_logic lab=VREF}
+C {lab_pin.sym} 530 20 2 0 {name=p14 sig_type=std_logic lab=SUM}
+C {lab_pin.sym} 670 80 2 0 {name=p15 sig_type=std_logic lab=RST}
+C {lab_pin.sym} 470 80 2 0 {name=p16 sig_type=std_logic lab=RST_N}
+C {lab_pin.sym} 590 80 2 1 {name=p17 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 390 80 2 1 {name=p18 sig_type=std_logic lab=VCC}
+C {/home/ttuser/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/nfet_01v8.sym} 840 -430 0 0 {name=M7
 L=0.15
 W=1
 nf=1
@@ -170,7 +223,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {/home/ttuser/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/pfet_01v8.sym} 200 -100 0 0 {name=M8
+C {/home/ttuser/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/pfet_01v8.sym} 1040 -430 0 0 {name=M8
 L=0.15
 W=2
 nf=1
@@ -184,13 +237,12 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {lab_pin.sym} 120 -160 0 0 {name=p19 sig_type=std_logic lab=IN1}
-C {lab_pin.sym} 120 -40 0 0 {name=p20 sig_type=std_logic lab=BP1}
-C {lab_pin.sym} -20 -100 0 0 {name=p21 sig_type=std_logic lab=SHARE}
-C {lab_pin.sym} 180 -100 0 0 {name=p22 sig_type=std_logic lab=SHARE_N}
-C {lab_pin.sym} 60 -100 0 1 {name=p23 sig_type=std_logic lab=VSS}
-C {lab_pin.sym} 260 -100 0 1 {name=p24 sig_type=std_logic lab=VCC}
-C {/home/ttuser/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/nfet_01v8.sym} 500 -100 0 0 {name=M9
+C {lab_pin.sym} 960 -490 0 0 {name=p19 sig_type=std_logic lab=IN1}
+C {lab_pin.sym} 820 -430 0 0 {name=p21 sig_type=std_logic lab=SHARE}
+C {lab_pin.sym} 1020 -430 0 0 {name=p22 sig_type=std_logic lab=SHARE_N}
+C {lab_pin.sym} 900 -430 0 1 {name=p23 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 1100 -430 0 1 {name=p24 sig_type=std_logic lab=VCC}
+C {/home/ttuser/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/nfet_01v8.sym} 1340 -430 0 0 {name=M9
 L=0.15
 W=1
 nf=1
@@ -204,7 +256,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {/home/ttuser/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/pfet_01v8.sym} 700 -100 0 0 {name=M10
+C {/home/ttuser/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/pfet_01v8.sym} 1540 -430 0 0 {name=M10
 L=0.15
 W=2
 nf=1
@@ -218,21 +270,19 @@ sa=0 sb=0 sd=0
 model=pfet_01v8
 spiceprefix=X
 }
-C {lab_pin.sym} 620 -160 0 0 {name=p25 sig_type=std_logic lab=VREF}
-C {lab_pin.sym} 620 -40 0 0 {name=p26 sig_type=std_logic lab=BP1}
-C {lab_pin.sym} 480 -100 0 0 {name=p27 sig_type=std_logic lab=RST}
-C {lab_pin.sym} 680 -100 0 0 {name=p28 sig_type=std_logic lab=RST_N}
-C {lab_pin.sym} 560 -100 0 1 {name=p29 sig_type=std_logic lab=VSS}
-C {lab_pin.sym} 760 -100 0 1 {name=p30 sig_type=std_logic lab=VCC}
-C {/home/ttuser/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/cap_mim_m3_2.sym} 1000 -100 0 0 {name=C0 model=cap_mim_m3_2 W=10 L=10 MF=5 spiceprefix=X}
-C {lab_pin.sym} 1000 -160 0 0 {name=p31 sig_type=std_logic lab=SUM}
-C {lab_pin.sym} 1000 -40 0 0 {name=p32 sig_type=std_logic lab=BP0}
-C {/home/ttuser/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/cap_mim_m3_2.sym} 1200 -100 0 0 {name=C1a model=cap_mim_m3_2 W=10 L=10 MF=5 spiceprefix=X}
-C {lab_pin.sym} 1200 -160 0 0 {name=p33 sig_type=std_logic lab=SUM}
-C {lab_pin.sym} 1200 -40 0 0 {name=p34 sig_type=std_logic lab=BP1}
-C {/home/ttuser/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/cap_mim_m3_2.sym} 1400 -100 0 0 {name=C1b model=cap_mim_m3_2 W=10 L=10 MF=5 spiceprefix=X}
-C {lab_pin.sym} 1400 -160 0 0 {name=p35 sig_type=std_logic lab=SUM}
-C {lab_pin.sym} 1400 -40 0 0 {name=p36 sig_type=std_logic lab=BP1}
+C {lab_pin.sym} 1460 -490 0 0 {name=p25 sig_type=std_logic lab=VREF}
+C {lab_pin.sym} 1320 -430 0 0 {name=p27 sig_type=std_logic lab=RST}
+C {lab_pin.sym} 1520 -430 0 0 {name=p28 sig_type=std_logic lab=RST_N}
+C {lab_pin.sym} 1400 -430 0 1 {name=p29 sig_type=std_logic lab=VSS}
+C {lab_pin.sym} 1600 -430 0 1 {name=p30 sig_type=std_logic lab=VCC}
+C {/home/ttuser/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/cap_mim_m3_2.sym} 340 -110 2 0 {name=C0 model=cap_mim_m3_2 W=10 L=10 MF=5 spiceprefix=X}
+C {lab_pin.sym} 340 -50 2 0 {name=p31 sig_type=std_logic lab=SUM}
+C {lab_pin.sym} 340 -310 2 0 {name=p32 sig_type=std_logic lab=BP0}
+C {/home/ttuser/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/cap_mim_m3_2.sym} 1280 -220 2 0 {name=C1a model=cap_mim_m3_2 W=10 L=10 MF=5 spiceprefix=X}
+C {lab_pin.sym} 1280 -160 2 0 {name=p33 sig_type=std_logic lab=SUM}
+C {lab_pin.sym} 1200 -320 2 0 {name=p34 sig_type=std_logic lab=BP1}
+C {/home/ttuser/pdk/sky130A/libs.tech/xschem/sky130_fd_pr/cap_mim_m3_2.sym} 1080 -220 2 0 {name=C1b model=cap_mim_m3_2 W=10 L=10 MF=5 spiceprefix=X}
+C {lab_pin.sym} 1080 -160 2 0 {name=p35 sig_type=std_logic lab=SUM}
 C {ipin.sym} -400 -500 0 0 {name=i1 lab=VCC}
 C {ipin.sym} -400 -470 0 0 {name=i2 lab=VSS}
 C {ipin.sym} -400 -440 0 0 {name=i3 lab=VREF}

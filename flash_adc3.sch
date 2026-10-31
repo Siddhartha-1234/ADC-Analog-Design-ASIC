@@ -5,7 +5,7 @@ K {}
 V {}
 S {}
 E {}
-N 0 -450 0 -480 {}
+N 0 -480 0 -450 {}
 N 0 30 0 60 {}
 N 0 -390 40 -390 {}
 N 0 -330 40 -330 {}
@@ -149,5 +149,3 @@ C {ipin.sym} -400 -350 0 0 {name=i6 lab=ADJ}
 C {opin.sym} -400 -300 0 0 {name=o1 lab=D2}
 C {opin.sym} -400 -270 0 0 {name=o2 lab=D1}
 C {opin.sym} -400 -240 0 0 {name=o3 lab=D0}
-T {3-bit flash ADC: 8 equal resistors give 7 references k/8 VREF; 7 comparators (VIN vs TAPk) give thermometer code T1..T7; encoder x8 gives D2 D1 D0
-Input range: VIN and the taps must stay inside the comparator input range (PMOS input pair), so use VREF about 0.8 V (LSB = 100 mV)} -400 -1000 0 0 0.3 0.3 {}

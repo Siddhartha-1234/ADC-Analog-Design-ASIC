@@ -5,8 +5,6 @@ K {}
 V {}
 S {}
 E {}
-T {4x4 SRAM compute-in-memory array (Fig. 1a of the paper).  Cell (i,j): weight stored in a 6T cell, its Q node gates the read transistor between row input RIN_i and column line CL_j.
-Each column current is converted to a voltage by a load resistor RL (resistor divider, 250 ohm): VCL_j = sum_i(G_ij.VRIN_i) / (sum_i G_ij + 1/RL).  Weights are written through WL_i / BL_j / BLB_j.} -400 -640 0 0 0.3 0.3 {}
 N 400 1120 400 1150 {}
 N 400 1210 400 1240 {}
 N 1100 1120 1100 1150 {}

@@ -5,11 +5,9 @@ K {}
 V {}
 S {}
 E {}
-T {Ideal expectation at the end of each SHARE phase (VREF=0.6 V, C0=C, C1=2C):
-cycle 1: IN0=1.2, IN1=0.9 -> SUM = 1.0 V
+T {cycle 1: IN0=1.2, IN1=0.9 -> SUM = 1.0 V
 cycle 2: IN0=0.9, IN1=1.2 -> SUM = 1.1 V
-cycle 3: IN0=IN1=0.3 -> SUM = 0.3 V
-Measured values (sum1..sum3) differ slightly because of CL, switch charge injection and parasitics.} 400 -140 0 0 0.3 0.3 {}
+cycle 3: IN0=IN1=0.3 -> SUM = 0.3 V} 400 -140 0 0 0.3 0.3 {}
 C {/home/ttuser/Documents/ADCAnalogDesign/CiM components/shift_add_2col.sym} 400 -300 0 0 {name=x1}
 C {lab_pin.sym} 300 -380 0 0 {name=p1 sig_type=std_logic lab=VCC}
 C {lab_pin.sym} 300 -360 0 0 {name=p2 sig_type=std_logic lab=VSS}
@@ -61,7 +59,7 @@ meas tran sum1 find v(SUM) at=245n
 meas tran sum2 find v(SUM) at=645n
 meas tran sum3 find v(SUM) at=1045n
 plot v(RST) v(SHARE)
-plot v(IN0) v(IN1) v(SUM)
-plot v(x1.BP0) v(x1.BP1) v(SUM)
+plot v(IN0)+1.2 v(IN1)+2.4 v(SUM)
+plot v(x1.BP0)+1.2 v(x1.BP1)+2.4 v(SUM)
 .endc
 "}

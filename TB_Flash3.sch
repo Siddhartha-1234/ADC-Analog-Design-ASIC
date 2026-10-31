@@ -5,7 +5,6 @@ K {}
 V {}
 S {}
 E {}
-
 C {/home/ttuser/Documents/ADCAnalogDesign/flash_adc3.sym} 500 -300 0 0 {name=x1}
 C {lab_pin.sym} 400 -350 0 0 {name=p1 sig_type=std_logic lab=VCC}
 C {lab_pin.sym} 400 -330 0 0 {name=p2 sig_type=std_logic lab=0}
@@ -52,7 +51,3 @@ plot v(x1.T1) v(x1.T2)+2 v(x1.T3)+4 v(x1.T4)+6 v(x1.T5)+8 v(x1.T6)+10 v(x1.T7)+1
 plot v(D2) v(D1)+2 v(D0)+4
 .endc
 "}
-T {VREF = 0.8 V -> LSB = 100 mV, ideal thresholds 0.1, 0.2 ... 0.7 V.
-VIN, phase 1 (0-8 us): staircase at the middle of each code, 0.05, 0.15 ... 0.75 V, 1 us each -> expected code 0,1,2 ... 7.
-VIN, phase 2 (9-25 us): ramp 0 -> 0.8 V; vth1..vth7 should be close to 0.1 ... 0.7 V (offset and delay of each comparator shift them).
-ADJ = 0.9 V is a placeholder: use the ADJ value from your comparator test.} 100 -140 0 0 0.3 0.3 {}

@@ -1,0 +1,39 @@
+.subckt comparator_mc VCC VSS EN_N MINUS PLUS ADJ DIFFOUT dv_xm3=0 dv_xm7=0 dv_xm16=0 dv_xm4=0 dv_xm5=0 dv_xm6=0 dv_xm9=0 dv_xm8=0 dv_xm11=0 dv_xm10=0 dv_xm12=0 dv_xm13=0 dv_xm17=0 dv_xm15=0 dv_xm2=0
+*.ipin VCC
+*.ipin VSS
+*.ipin EN_N
+*.ipin MINUS
+*.ipin PLUS
+*.ipin ADJ
+*.opin DIFFOUT
+XM3 net1 g_XM3 VCC VCC sky130_fd_pr__pfet_01v8 L=8 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'  pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'  sa=0 sb=0 sd=0 mult=1 m=1
+Vmc_XM3 g_XM3 EN_N {dv_xm3}
+XM7 Inhigh g_XM7 VCC VCC sky130_fd_pr__pfet_01v8 L=8 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'  pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'  sa=0 sb=0 sd=0 mult=1 m=1
+Vmc_XM7 g_XM7 EN_N {dv_xm7}
+XM16 mirhigh g_XM16 VCC VCC sky130_fd_pr__pfet_01v8 L=0.15 W=5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'  pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'  sa=0 sb=0 sd=0 mult=1 m=1
+Vmc_XM16 g_XM16 EN_N {dv_xm16}
+XM4 G1 g_XM4 net1 VCC sky130_fd_pr__pfet_01v8_lvt L=1 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'  pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'  sa=0 sb=0 sd=0 mult=1 m=1
+Vmc_XM4 g_XM4 ADJ {dv_xm4}
+XM5 G1 g_XM5 net2 VSS sky130_fd_pr__nfet_01v8_lvt L=1 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'  pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'  sa=0 sb=0 sd=0 mult=1 m=1
+Vmc_XM5 g_XM5 ADJ {dv_xm5}
+XM6 net2 g_XM6 VSS VSS sky130_fd_pr__nfet_01v8_lvt L=8 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'  pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'  sa=0 sb=0 sd=0 mult=1 m=1
+Vmc_XM6 g_XM6 VCC {dv_xm6}
+XM9 G1 g_XM9 Inhigh VCC sky130_fd_pr__pfet_01v8_lvt L=2 W=8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'  pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'  sa=0 sb=0 sd=0 mult=1 m=1
+Vmc_XM9 g_XM9 MINUS {dv_xm9}
+XM8 G2 g_XM8 Inhigh VCC sky130_fd_pr__pfet_01v8_lvt L=2 W=8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'  pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'  sa=0 sb=0 sd=0 mult=1 m=1
+Vmc_XM8 g_XM8 PLUS {dv_xm8}
+XM11 G2 g_XM11 VSS VSS sky130_fd_pr__nfet_01v8_lvt L=4 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'  pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'  sa=0 sb=0 sd=0 mult=1 m=1
+Vmc_XM11 g_XM11 G2 {dv_xm11}
+XM10 G1 g_XM10 VSS VSS sky130_fd_pr__nfet_01v8_lvt L=4 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'  pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'  sa=0 sb=0 sd=0 mult=1 m=1
+Vmc_XM10 g_XM10 G1 {dv_xm10}
+XM12 DIFFOUT g_XM12 VSS VSS sky130_fd_pr__nfet_01v8_lvt L=4 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'  pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'  sa=0 sb=0 sd=0 mult=1 m=1
+Vmc_XM12 g_XM12 G2 {dv_xm12}
+XM13 DIFFOUT g_XM13 VSS VSS sky130_fd_pr__nfet_01v8_lvt L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'  as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'  nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+Vmc_XM13 g_XM13 EN_N {dv_xm13}
+XM17 pg2g g_XM17 VSS VSS sky130_fd_pr__nfet_01v8_lvt L=4 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'  pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'  sa=0 sb=0 sd=0 mult=1 m=1
+Vmc_XM17 g_XM17 G1 {dv_xm17}
+XM15 pg2g g_XM15 mirhigh VCC sky130_fd_pr__pfet_01v8_lvt L=4 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'  as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'  nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+Vmc_XM15 g_XM15 pg2g {dv_xm15}
+XM2 DIFFOUT g_XM2 mirhigh VCC sky130_fd_pr__pfet_01v8_lvt L=4 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'  as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'  nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+Vmc_XM2 g_XM2 pg2g {dv_xm2}
+.ends

@@ -5,14 +5,14 @@ K {}
 V {}
 S {}
 E {}
-T {Phase 1 (0-200 ns): write the 4x4 weights row by row (WL0..WL3 one after another, BL / BLB carry data and complement).
-Phase 2 (250-550 ns): apply the input vectors on RIN0..3 and read the column voltages VCL0..3 (vj_xk measured at the end of each window).
+T {Phase 1 (0-200 ns): write the 4x4 weights row by row
+Phase 2 (250-550 ns): apply the input vectors on RIN0..3 and read the column voltages VCL0..3
 Weights (row i, column j): [[1, 0, 1, 1], [0, 1, 1, 0], [1, 1, 0, 1], [0, 0, 1, 1]]
 Input vectors (1 = 0.4 V on the row), 100 ns each from 250 ns:
 x = [1, 0, 0, 0]: MAC = [1, 0, 1, 1], ideal VCL0..3 = 67 mV, 0 mV, 57 mV, 57 mV
 x = [1, 1, 1, 1]: MAC = [2, 2, 3, 3], ideal VCL0..3 = 133 mV, 133 mV, 171 mV, 171 mV
 x = [1, 0, 1, 1]: MAC = [2, 1, 2, 3], ideal VCL0..3 = 133 mV, 67 mV, 114 mV, 171 mV
-The SRAM read transistor (about 1 kohm when on) is close to, but not exactly, 1 mS, so the values will be a little different.} 820 -270 0 0 0.25 0.25 {}
+The SRAM read transistor about 2.3kOhm kohm when on} 820 -270 0 0 0.25 0.25 {}
 C {/home/ttuser/Documents/ADCAnalogDesign/CiM components/cim_sram_4x4.sym} 500 -300 0 0 {name=x1}
 C {lab_pin.sym} 400 -470 0 0 {name=p1 sig_type=std_logic lab=VCC}
 C {lab_pin.sym} 400 -450 0 0 {name=p2 sig_type=std_logic lab=0}
