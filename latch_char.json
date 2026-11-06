@@ -1,0 +1,36 @@
+{
+ "offset_vs_cm_mV": {
+  "0.05": 0.11,
+  "0.1": 0.11,
+  "0.2": 0.11,
+  "0.4": 0.12,
+  "0.6": 0.13,
+  "0.8": NaN
+ },
+ "delay": {
+  "0.001": {
+   "t_decide_ps": 635.9,
+   "E_per_decision_fJ": 102.4
+  },
+  "0.005": {
+   "t_decide_ps": 565.4,
+   "E_per_decision_fJ": 98.0
+  },
+  "0.01": {
+   "t_decide_ps": 536.6,
+   "E_per_decision_fJ": 96.4
+  },
+  "0.05": {
+   "t_decide_ps": 469.8,
+   "E_per_decision_fJ": 87.9
+  },
+  "0.1": {
+   "t_decide_ps": 444.2,
+   "E_per_decision_fJ": 85.2
+  },
+  "0.3": {
+   "t_decide_ps": 428.6,
+   "E_per_decision_fJ": 86.9
+  }
+ }
+}

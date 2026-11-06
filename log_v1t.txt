@@ -1,0 +1,2 @@
+v1 scale 1.0: conv 2000 ns ok=True wrong=0 E=40.99 pJ (VCC 40.65, VREF 0.34)  P=20.5 uW []
+v1 scale 0.5: conv 1000 ns ok=True wrong=0 E=21.27 pJ (VCC 20.93, VREF 0.34)  P=21.3 uW []

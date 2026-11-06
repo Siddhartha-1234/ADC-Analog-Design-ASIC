@@ -1,0 +1,12 @@
+offset vs CM (mV): {0.05: 0.11, 0.1: 0.11, 0.2: 0.11, 0.4: 0.12, 0.6: 0.13, 0.8: nan}
+od 0.001 {'t_decide_ps': 635.9, 'E_per_decision_fJ': 102.4}
+od 0.005 {'t_decide_ps': 565.4, 'E_per_decision_fJ': 98.0}
+od 0.01 {'t_decide_ps': 536.6, 'E_per_decision_fJ': 96.4}
+od 0.05 {'t_decide_ps': 469.8, 'E_per_decision_fJ': 87.9}
+od 0.1 {'t_decide_ps': 444.2, 'E_per_decision_fJ': 85.2}
+od 0.3 {'t_decide_ps': 428.6, 'E_per_decision_fJ': 86.9}
+ideal_source {'flip_between_mV': [np.float64(-2.0), np.float64(0.0)], 'decisions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'kick_peak_mV': 0.0, 'net_step_after_decision_mV': 0.0, 'err': []}
+floating_160fF {'flip_between_mV': [np.float64(-14.0), np.float64(-12.0)], 'decisions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'kick_peak_mV': 20.3, 'net_step_after_decision_mV': 21.14, 'err': []}
+floating_80fF {'flip_between_mV': [np.float64(-28.0), np.float64(-26.0)], 'decisions': [0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'kick_peak_mV': 39.22, 'net_step_after_decision_mV': 40.44, 'err': []}
+floating_160fF_with_replica {'flip_between_mV': [np.float64(-2.0), np.float64(0.0)], 'decisions': [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], 'kick_peak_mV': 20.12, 'net_step_after_decision_mV': 21.14, 'err': []}
+{"nrun": 39, "nominal_mV": 0.66, "mean_mV": -0.82, "sigma_mV": 10.08, "worst_mV": 22.0, "sigma_input_pair_only_mV": 8.28, "err": []}

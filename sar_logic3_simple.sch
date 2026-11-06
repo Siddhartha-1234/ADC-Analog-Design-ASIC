@@ -38,7 +38,7 @@ lab=VSS}
 N 450 -20 470 -20 {
 lab=RSTB}
 N 450 20 470 20 {
-lab=#net1}
+lab=K2}
 N 630 0 650 0 {
 lab=R2}
 N 550 -80 550 -60 {
@@ -70,7 +70,7 @@ lab=DEC1}
 N 50 470 70 470 {
 lab=COMB}
 N 230 450 250 450 {
-lab=K1}
+lab=#net1}
 N 150 370 150 390 {
 lab=VCC}
 N 150 510 150 530 {
@@ -78,7 +78,7 @@ lab=VSS}
 N 450 430 470 430 {
 lab=RSTB}
 N 450 470 470 470 {
-lab=K1}
+lab=#net1}
 N 630 450 650 450 {
 lab=R1}
 N 550 370 550 390 {
@@ -146,10 +146,23 @@ lab=VCC}
 N 1000 1160 1000 1180 {
 lab=VSS}
 N 360 0 360 20 {
-lab=#net1}
+lab=K2}
 N 360 20 450 20 {
+lab=K2}
+N 230 -0 360 -0 {
+lab=K2}
+N 250 450 350 450 {
 lab=#net1}
-N 230 -0 360 -0 {}
+N 350 450 350 470 {
+lab=#net1}
+N 350 470 450 470 {
+lab=#net1}
+N 250 900 360 900 {
+lab=K0}
+N 360 900 360 920 {
+lab=K0}
+N 360 920 450 920 {
+lab=K0}
 C {/home/ttuser/Documents/ADCAnalogDesign/inverter.sym} 250 -350 0 0 {name=x1}
 C {lab_pin.sym} 80 -370 0 0 {name=l33 sig_type=std_logic lab=RST}
 C {lab_pin.sym} 360 -360 0 1 {name=l34 sig_type=std_logic lab=RSTB}
@@ -186,12 +199,11 @@ C {lab_pin.sym} 1000 280 0 0 {name=l60 sig_type=std_logic lab=VSS}
 C {/home/ttuser/Documents/ADCAnalogDesign/nand2.sym} 150 450 0 0 {name=x7}
 C {lab_pin.sym} 50 430 0 0 {name=l61 sig_type=std_logic lab=DEC1}
 C {lab_pin.sym} 50 470 0 0 {name=l62 sig_type=std_logic lab=COMB}
-C {lab_pin.sym} 250 450 0 1 {name=l63 sig_type=std_logic lab=K1}
 C {lab_pin.sym} 150 370 0 0 {name=l64 sig_type=std_logic lab=VCC}
 C {lab_pin.sym} 150 530 0 0 {name=l65 sig_type=std_logic lab=VSS}
 C {/home/ttuser/Documents/ADCAnalogDesign/nand2.sym} 550 450 0 0 {name=x8}
 C {lab_pin.sym} 450 430 0 0 {name=l66 sig_type=std_logic lab=RSTB}
-C {lab_pin.sym} 450 470 0 0 {name=l67 sig_type=std_logic lab=K1}
+C {lab_pin.sym} 350 450 0 1 {name=l67 sig_type=std_logic lab=K1}
 C {lab_pin.sym} 650 450 0 1 {name=l68 sig_type=std_logic lab=R1}
 C {lab_pin.sym} 550 370 0 0 {name=l69 sig_type=std_logic lab=VCC}
 C {lab_pin.sym} 550 530 0 0 {name=l70 sig_type=std_logic lab=VSS}
@@ -210,12 +222,11 @@ C {lab_pin.sym} 1000 730 0 0 {name=l80 sig_type=std_logic lab=VSS}
 C {/home/ttuser/Documents/ADCAnalogDesign/nand2.sym} 150 900 0 0 {name=x11}
 C {lab_pin.sym} 50 880 0 0 {name=l81 sig_type=std_logic lab=DEC0}
 C {lab_pin.sym} 50 920 0 0 {name=l82 sig_type=std_logic lab=COMB}
-C {lab_pin.sym} 250 900 0 1 {name=l83 sig_type=std_logic lab=K0}
 C {lab_pin.sym} 150 820 0 0 {name=l84 sig_type=std_logic lab=VCC}
 C {lab_pin.sym} 150 980 0 0 {name=l85 sig_type=std_logic lab=VSS}
 C {/home/ttuser/Documents/ADCAnalogDesign/nand2.sym} 550 900 0 0 {name=x12}
 C {lab_pin.sym} 450 880 0 0 {name=l86 sig_type=std_logic lab=RSTB}
-C {lab_pin.sym} 450 920 0 0 {name=l87 sig_type=std_logic lab=K0}
+C {lab_pin.sym} 360 920 0 0 {name=l87 sig_type=std_logic lab=K0}
 C {lab_pin.sym} 650 900 0 1 {name=l88 sig_type=std_logic lab=R0}
 C {lab_pin.sym} 550 820 0 0 {name=l89 sig_type=std_logic lab=VCC}
 C {lab_pin.sym} 550 980 0 0 {name=l90 sig_type=std_logic lab=VSS}

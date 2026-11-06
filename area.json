@@ -1,0 +1,50 @@
+{
+ "v0": {
+  "transistors": 74,
+  "gate_area_um2": 146.5,
+  "mim_plate_um2": 4000.0,
+  "mim_with_spacing_um2": 4700.2,
+  "transistor_footprint_um2": 460.6,
+  "total_estimate_um2": 5161.0
+ },
+ "v1": {
+  "transistors": 74,
+  "gate_area_um2": 144.2,
+  "mim_plate_um2": 495.6,
+  "mim_with_spacing_um2": 606.9,
+  "transistor_footprint_um2": 443.4,
+  "total_estimate_um2": 1050.0
+ },
+ "v2": {
+  "transistors": 84,
+  "gate_area_um2": 24.4,
+  "mim_plate_um2": 128.0,
+  "mim_with_spacing_um2": 187.4,
+  "transistor_footprint_um2": 275.2,
+  "total_estimate_um2": 463.0
+ },
+ "v3": {
+  "transistors": 125,
+  "gate_area_um2": 16.5,
+  "mim_plate_um2": 125.7,
+  "mim_with_spacing_um2": 169.0,
+  "transistor_footprint_um2": 261.6,
+  "total_estimate_um2": 431.0
+ },
+ "latch": {
+  "transistors": 25,
+  "gate_area_um2": 6.1,
+  "mim_plate_um2": 0.0,
+  "mim_with_spacing_um2": 0.0,
+  "transistor_footprint_um2": 67.1,
+  "total_estimate_um2": 67.0
+ },
+ "old_comp": {
+  "transistors": 15,
+  "gate_area_um2": 126.4,
+  "mim_plate_um2": 0.0,
+  "mim_with_spacing_um2": 0.0,
+  "transistor_footprint_um2": 238.7,
+  "total_estimate_um2": 239.0
+ }
+}

@@ -1,0 +1,4 @@
+v3n scale 1.0: conv 100 ns ok=True wrong=0 codes=[0, 7, 0, 7, 1, 6, 1, 6, 2, 5, 2, 5, 3, 4, 3, 4] E=0.617 pJ (VCC 0.605, VREF 0.013, VCM -0.001; from VIN 0.008) P=6.17 uW gain=1.0064 []
+v3n scale 0.5: conv 50 ns ok=True wrong=0 codes=[0, 7, 0, 7, 1, 6, 1, 6, 2, 5, 2, 5, 3, 4, 3, 4] E=0.614 pJ (VCC 0.602, VREF 0.013, VCM -0.001; from VIN 0.009) P=12.29 uW gain=1.0047 []
+v3n scale 0.3: conv 30 ns ok=True wrong=0 codes=[0, 7, 0, 7, 1, 6, 1, 6, 2, 5, 2, 5, 3, 4, 3, 4] E=0.613 pJ (VCC 0.600, VREF 0.013, VCM -0.001; from VIN 0.010) P=20.42 uW gain=1.0054 []
+v3n scale 0.2: conv 20 ns ok=True wrong=0 codes=[0, 7, 0, 7, 1, 6, 1, 6, 2, 5, 2, 5, 3, 4, 3, 4] E=0.604 pJ (VCC 0.591, VREF 0.013, VCM -0.001; from VIN 0.011) P=30.18 uW gain=1.0124 []

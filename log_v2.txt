@@ -1,0 +1,2 @@
+v2 scale 1.0: conv 100 ns ok=True wrong=0 codes=[0, 7, 0, 7, 1, 6, 1, 6, 2, 5, 2, 5, 3, 4, 3, 4] REF(7)=691.5 mV E=1.049 pJ (VCC 0.954, VREF 0.095) P=10.5 uW []
+v2 scale 0.5: conv 50 ns ok=False wrong=3 codes=[0, 7, 0, 7, 1, 6, 2, 6, 2, 6, 2, 5, 3, 4, 4, 4] REF(7)=667.6 mV E=1.052 pJ (VCC 0.961, VREF 0.091) P=21.0 uW []
