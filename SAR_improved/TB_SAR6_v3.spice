@@ -1,0 +1,420 @@
+** sch_path: /home/ttuser/Documents/ADCAnalogDesign/SAR_improved/TB_SAR6_v3.sch
+**.subckt TB_SAR6_v3
+x1 VCC 0 VREF VCM VIN SMP CLK C5 U5 C4 U4 C3 U3 C2 U2 C1 U1 C0 D5 D4 D3 D2 D1 D0 sar_adc6_v3
+V1 VCC 0 1.8
+V2 VREF 0 0.8
+V3 VCM 0 0.4
+V5 VIN 0 PWL(0 0.00625 177n 0.00625 177.5n 0.01875 352n 0.01875 352.5n 0.03125 527n 0.03125 527.5n 0.04375 702n 0.04375 702.5n
++ 0.05625 877n 0.05625 877.5n 0.06875 1052n 0.06875 1052.5n 0.08125 1227n 0.08125 1227.5n 0.09375 1402n 0.09375 1402.5n 0.10625 1577n
++ 0.10625 1577.5n 0.11875 1752n 0.11875 1752.5n 0.13125 1927n 0.13125 1927.5n 0.14375 2102n 0.14375 2102.5n 0.15625 2277n 0.15625 2277.5n
++ 0.16875 2452n 0.16875 2452.5n 0.18125 2627n 0.18125 2627.5n 0.19375 2802n 0.19375 2802.5n 0.20625 2977n 0.20625 2977.5n 0.21875 3152n
++ 0.21875 3152.5n 0.23125 3327n 0.23125 3327.5n 0.24375 3502n 0.24375 3502.5n 0.25625 3677n 0.25625 3677.5n 0.26875 3852n 0.26875 3852.5n
++ 0.28125 4027n 0.28125 4027.5n 0.29375 4202n 0.29375 4202.5n 0.30625 4377n 0.30625 4377.5n 0.31875 4552n 0.31875 4552.5n 0.33125 4727n
++ 0.33125 4727.5n 0.34375 4902n 0.34375 4902.5n 0.35625 5077n 0.35625 5077.5n 0.36875 5252n 0.36875 5252.5n 0.38125 5427n 0.38125 5427.5n
++ 0.39375 5602n 0.39375 5602.5n 0.40625 5777n 0.40625 5777.5n 0.41875 5952n 0.41875 5952.5n 0.43125 6127n 0.43125 6127.5n 0.44375 6302n
++ 0.44375 6302.5n 0.45625 6477n 0.45625 6477.5n 0.46875 6652n 0.46875 6652.5n 0.48125 6827n 0.48125 6827.5n 0.49375 7002n 0.49375 7002.5n
++ 0.50625 7177n 0.50625 7177.5n 0.51875 7352n 0.51875 7352.5n 0.53125 7527n 0.53125 7527.5n 0.54375 7702n 0.54375 7702.5n 0.55625 7877n
++ 0.55625 7877.5n 0.56875 8052n 0.56875 8052.5n 0.58125 8227n 0.58125 8227.5n 0.59375 8402n 0.59375 8402.5n 0.60625 8577n 0.60625 8577.5n
++ 0.61875 8752n 0.61875 8752.5n 0.63125 8927n 0.63125 8927.5n 0.64375 9102n 0.64375 9102.5n 0.65625 9277n 0.65625 9277.5n 0.66875 9452n
++ 0.66875 9452.5n 0.68125 9627n 0.68125 9627.5n 0.69375 9802n 0.69375 9802.5n 0.70625 9977n 0.70625 9977.5n 0.71875 10152n 0.71875 10152.5n
++ 0.73125 10327n 0.73125 10327.5n 0.74375 10502n 0.74375 10502.5n 0.75625 10677n 0.75625 10677.5n 0.76875 10852n 0.76875 10852.5n 0.78125
++ 11027n 0.78125 11027.5n 0.79375)
+V4 CLK 0 PWL(0 0 24n 0 24.1n 1.8 28n 1.8 28.1n 0 49n 0 49.1n 1.8 53n 1.8 53.1n 0 74n 0 74.1n 1.8 78n 1.8 78.1n 0 99n 0 99.1n 1.8
++ 103n 1.8 103.1n 0 124n 0 124.1n 1.8 128n 1.8 128.1n 0 149n 0 149.1n 1.8 153n 1.8 153.1n 0 175n 0) r=0
+V6 SMP 0 PULSE(0 1.8 0n 0.1n 0.1n 19.9n 175n)
+V7 C5 0 PULSE(0 1.8 24n 0.1n 0.1n 3.9n 175n)
+V8 U5 0 PULSE(0 1.8 30n 0.1n 0.1n 4.9n 175n)
+V9 C4 0 PULSE(0 1.8 49n 0.1n 0.1n 3.9n 175n)
+V10 U4 0 PULSE(0 1.8 55n 0.1n 0.1n 4.9n 175n)
+V11 C3 0 PULSE(0 1.8 74n 0.1n 0.1n 3.9n 175n)
+V12 U3 0 PULSE(0 1.8 80n 0.1n 0.1n 4.9n 175n)
+V13 C2 0 PULSE(0 1.8 99n 0.1n 0.1n 3.9n 175n)
+V14 U2 0 PULSE(0 1.8 105n 0.1n 0.1n 4.9n 175n)
+V15 C1 0 PULSE(0 1.8 124n 0.1n 0.1n 3.9n 175n)
+V16 U1 0 PULSE(0 1.8 130n 0.1n 0.1n 4.9n 175n)
+V17 C0 0 PULSE(0 1.8 149n 0.1n 0.1n 3.9n 175n)
+**** begin user architecture code
+
+.lib /home/ttuser/pdk/sky130A/libs.tech/combined/sky130.lib.spice tt
+.option method=gear reltol=1e-4
+.control
+save all
+tran 0.05n 11200n
+let code = 0*v(D0)
+let code = code + 32*ceil((v(D5)-0.9)/10)
+let code = code + 16*ceil((v(D4)-0.9)/10)
+let code = code + 8*ceil((v(D3)-0.9)/10)
+let code = code + 4*ceil((v(D2)-0.9)/10)
+let code = code + 2*ceil((v(D1)-0.9)/10)
+let code = code + 1*ceil((v(D0)-0.9)/10)
+let nwrong = 0
+let k = 0
+while k < 64
+  let tr = k*175e-9 + 165e-9
+  meas tran ck find code at=$&tr
+  print k ck
+  if abs(ck - k) > 0.5
+    let nwrong = nwrong + 1
+  end
+  let k = k + 1
+end
+print nwrong
+let ptot = 1.8*(-i(V1)) + 0.8*(-i(V2)) + 0.4*(-i(V3))
+let pin = v(VIN)*(-i(V5))
+meas tran etot integ ptot from=0 to=11200n
+meas tran ein integ pin from=0 to=11200n
+let e_conv_pJ = etot/64*1e12
+let e_from_vin_pJ = ein/64*1e12
+let p_uW = etot/11200e-9*1e6
+print e_conv_pJ p_uW e_from_vin_pJ
+plot v(VIN) v(x1.VX) v(x1.VR)
+plot v(SMP) v(CLK)+2 v(x1.COM)+4
+plot v(x1.x2.BP5) v(x1.x2.BP4) v(x1.x2.BP3) v(x1.x2.BP2) v(x1.x2.BP1)
+plot v(D5)+0 v(D4)+2 v(D3)+4 v(D2)+6 v(D1)+8 v(D0)+10
+plot code
+.endc
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  /home/ttuser/Documents/ADCAnalogDesign/SAR_improved/sar_adc6_v3.sym # of pins=24
+** sym_path: /home/ttuser/Documents/ADCAnalogDesign/SAR_improved/sar_adc6_v3.sym
+** sch_path: /home/ttuser/Documents/ADCAnalogDesign/SAR_improved/sar_adc6_v3.sch
+.subckt sar_adc6_v3 VCC VSS VREF VCM VIN SMP CLK C5 U5 C4 U4 C3 U3 C2 U2 C1 U1 C0 D5 D4 D3 D2 D1 D0
+*.ipin VCC
+*.ipin VSS
+*.ipin VREF
+*.ipin VCM
+*.ipin VIN
+*.ipin SMP
+*.ipin CLK
+*.ipin C5
+*.ipin U5
+*.ipin C4
+*.ipin U4
+*.ipin C3
+*.ipin U3
+*.ipin C2
+*.ipin U2
+*.ipin C1
+*.ipin U1
+*.ipin C0
+*.opin D5
+*.opin D4
+*.opin D3
+*.opin D2
+*.opin D1
+*.opin D0
+x1 VCC VSS CLK VX VR COM COMB latch_comp
+x2 VCC VSS VREF VCM VIN SMP UP5 DN5 E5 E5B UP4 DN4 E4 E4B UP3 DN3 E3 E3B UP2 DN2 E2 E2B UP1 DN1 E1 E1B VX VR cdac_vcm6
+x3 VCC VSS SMP C5 C4 C3 C2 C1 C0 U5 U4 U3 U2 U1 COM COMB D5 D4 D3 D2 D1 D0 UP5 DN5 E5 E5B UP4 DN4 E4 E4B UP3 DN3 E3 E3B UP2 DN2 E2
++ E2B UP1 DN1 E1 E1B sar_logic_vcm6
+.ends
+
+
+* expanding   symbol:  /home/ttuser/Documents/ADCAnalogDesign/SAR_improved/latch_comp.sym # of pins=7
+** sym_path: /home/ttuser/Documents/ADCAnalogDesign/SAR_improved/latch_comp.sym
+** sch_path: /home/ttuser/Documents/ADCAnalogDesign/SAR_improved/latch_comp.sch
+.subckt latch_comp VDD VSS CLK INP INN OUT OUTB
+*.ipin VDD
+*.ipin VSS
+*.ipin CLK
+*.ipin INP
+*.ipin INN
+*.opin OUT
+*.opin OUTB
+XM7 TAIL CLKB VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM1 P INP TAIL VDD sky130_fd_pr__pfet_01v8 L=0.5 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Q INN TAIL VDD sky130_fd_pr__pfet_01v8 L=0.5 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 X Y P VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 Y X Q VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM5 X Y VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM6 Y X VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XMR1 P CLKB VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XMR2 Q CLKB VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XMR3 X CLKB VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XMR4 Y CLKB VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+x1 YB OUTB OUT VDD VSS nand2
+x2 XB OUT OUTB VDD VSS nand2
+x3 VDD X XB VSS inverter
+x4 VDD Y YB VSS inverter
+x5 VDD CLK CLKB VSS inverter
+.ends
+
+
+* expanding   symbol:  /home/ttuser/Documents/ADCAnalogDesign/SAR_improved/cdac_vcm6.sym # of pins=28
+** sym_path: /home/ttuser/Documents/ADCAnalogDesign/SAR_improved/cdac_vcm6.sym
+** sch_path: /home/ttuser/Documents/ADCAnalogDesign/SAR_improved/cdac_vcm6.sch
+.subckt cdac_vcm6 VCC VSS VREF VCM VIN SMP UP5 DN5 E5 E5B UP4 DN4 E4 E4B UP3 DN3 E3 E3B UP2 DN2 E2 E2B UP1 DN1 E1 E1B VX VR
+*.ipin VCC
+*.ipin VSS
+*.ipin VREF
+*.ipin VCM
+*.ipin VIN
+*.ipin SMP
+*.ipin UP5
+*.ipin DN5
+*.ipin E5
+*.ipin E5B
+*.ipin UP4
+*.ipin DN4
+*.ipin E4
+*.ipin E4B
+*.ipin UP3
+*.ipin DN3
+*.ipin E3
+*.ipin E3B
+*.ipin UP2
+*.ipin DN2
+*.ipin E2
+*.ipin E2B
+*.ipin UP1
+*.ipin DN1
+*.ipin E1
+*.ipin E1B
+*.opin VX
+*.opin VR
+XMS1 VX SMP VIN VSS sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XMS2 VX SMPB VIN VCC sky130_fd_pr__pfet_01v8 L=0.15 W=8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XMR1 VR SMP VCM VSS sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XMR2 VR SMPB VCM VCC sky130_fd_pr__pfet_01v8 L=0.15 W=8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XMSIP SMPB SMP VCC VCC sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XMSIN SMPB SMP VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XMU5 VREF UP5 BP5 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=16 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XMD5 BP5 DN5 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XMT5n BP5 E5B VCM VSS sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XMT5p BP5 E5 VCM VCC sky130_fd_pr__pfet_01v8 L=0.15 W=8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XMU4 VREF UP4 BP4 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=8 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XMD4 BP4 DN4 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XMT4n BP4 E4B VCM VSS sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XMT4p BP4 E4 VCM VCC sky130_fd_pr__pfet_01v8 L=0.15 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XMU3 VREF UP3 BP3 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XMD3 BP3 DN3 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XMT3n BP3 E3B VCM VSS sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XMT3p BP3 E3 VCM VCC sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XMU2 VREF UP2 BP2 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XMD2 BP2 DN2 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XMT2n BP2 E2B VCM VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XMT2p BP2 E2 VCM VCC sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XMU1 VREF UP1 BP1 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XMD1 BP1 DN1 VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XMT1n BP1 E1B VCM VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XMT1p BP1 E1 VCM VCC sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XC5 VX BP5 sky130_fd_pr__cap_mim_m3_2 W=4 L=4 MF=16 m=16
+XC4 VX BP4 sky130_fd_pr__cap_mim_m3_2 W=4 L=4 MF=8 m=8
+XC3 VX BP3 sky130_fd_pr__cap_mim_m3_2 W=4 L=4 MF=4 m=4
+XC2 VX BP2 sky130_fd_pr__cap_mim_m3_2 W=4 L=4 MF=2 m=2
+XC1 VX BP1 sky130_fd_pr__cap_mim_m3_2 W=4 L=4 MF=1 m=1
+XCD VX VSS sky130_fd_pr__cap_mim_m3_2 W=3.4 L=3.4 MF=1 m=1
+XCR VR VSS sky130_fd_pr__cap_mim_m3_2 W=4 L=4 MF=31 m=31
+XCRD VR VSS sky130_fd_pr__cap_mim_m3_2 W=3.4 L=3.4 MF=1 m=1
+.ends
+
+
+* expanding   symbol:  /home/ttuser/Documents/ADCAnalogDesign/SAR_improved/sar_logic_vcm6.sym # of pins=42
+** sym_path: /home/ttuser/Documents/ADCAnalogDesign/SAR_improved/sar_logic_vcm6.sym
+** sch_path: /home/ttuser/Documents/ADCAnalogDesign/SAR_improved/sar_logic_vcm6.sch
+.subckt sar_logic_vcm6 VCC VSS SMP C5 C4 C3 C2 C1 C0 U5 U4 U3 U2 U1 COM COMB D5 D4 D3 D2 D1 D0 UP5 DN5 E5 E5B UP4 DN4 E4 E4B UP3
++ DN3 E3 E3B UP2 DN2 E2 E2B UP1 DN1 E1 E1B
+*.ipin VCC
+*.ipin VSS
+*.ipin SMP
+*.ipin C5
+*.ipin C4
+*.ipin C3
+*.ipin C2
+*.ipin C1
+*.ipin C0
+*.ipin U5
+*.ipin U4
+*.ipin U3
+*.ipin U2
+*.ipin U1
+*.ipin COM
+*.ipin COMB
+*.opin D5
+*.opin D4
+*.opin D3
+*.opin D2
+*.opin D1
+*.opin D0
+*.opin UP5
+*.opin DN5
+*.opin E5
+*.opin E5B
+*.opin UP4
+*.opin DN4
+*.opin E4
+*.opin E4B
+*.opin UP3
+*.opin DN3
+*.opin E3
+*.opin E3B
+*.opin UP2
+*.opin DN2
+*.opin E2
+*.opin E2B
+*.opin UP1
+*.opin DN1
+*.opin E1
+*.opin E1B
+xi5 VCC C5 C5B VSS inv_min
+xs5 C5B COMB S5 VCC VSS nor2_min
+xr5 C5B COM R5 VCC VSS nor2_min
+xd5 R5 D5B D5 VCC VSS nor2_min
+xdb5 S5 D5 D5B VCC VSS nor2_min
+xe5 SMP E5B E5 VCC VSS nor2_min
+xeb5 U5 E5 E5B VCC VSS nor2_min
+xu5 E5B D5 UP5 VCC VSS nor2_min
+xn5 E5B D5B DN5 VCC VSS nor2_min
+xi4 VCC C4 C4B VSS inv_min
+xs4 C4B COMB S4 VCC VSS nor2_min
+xr4 C4B COM R4 VCC VSS nor2_min
+xd4 R4 D4B D4 VCC VSS nor2_min
+xdb4 S4 D4 D4B VCC VSS nor2_min
+xe4 SMP E4B E4 VCC VSS nor2_min
+xeb4 U4 E4 E4B VCC VSS nor2_min
+xu4 E4B D4 UP4 VCC VSS nor2_min
+xn4 E4B D4B DN4 VCC VSS nor2_min
+xi3 VCC C3 C3B VSS inv_min
+xs3 C3B COMB S3 VCC VSS nor2_min
+xr3 C3B COM R3 VCC VSS nor2_min
+xd3 R3 D3B D3 VCC VSS nor2_min
+xdb3 S3 D3 D3B VCC VSS nor2_min
+xe3 SMP E3B E3 VCC VSS nor2_min
+xeb3 U3 E3 E3B VCC VSS nor2_min
+xu3 E3B D3 UP3 VCC VSS nor2_min
+xn3 E3B D3B DN3 VCC VSS nor2_min
+xi2 VCC C2 C2B VSS inv_min
+xs2 C2B COMB S2 VCC VSS nor2_min
+xr2 C2B COM R2 VCC VSS nor2_min
+xd2 R2 D2B D2 VCC VSS nor2_min
+xdb2 S2 D2 D2B VCC VSS nor2_min
+xe2 SMP E2B E2 VCC VSS nor2_min
+xeb2 U2 E2 E2B VCC VSS nor2_min
+xu2 E2B D2 UP2 VCC VSS nor2_min
+xn2 E2B D2B DN2 VCC VSS nor2_min
+xi1 VCC C1 C1B VSS inv_min
+xs1 C1B COMB S1 VCC VSS nor2_min
+xr1 C1B COM R1 VCC VSS nor2_min
+xd1 R1 D1B D1 VCC VSS nor2_min
+xdb1 S1 D1 D1B VCC VSS nor2_min
+xe1 SMP E1B E1 VCC VSS nor2_min
+xeb1 U1 E1 E1B VCC VSS nor2_min
+xu1 E1B D1 UP1 VCC VSS nor2_min
+xn1 E1B D1B DN1 VCC VSS nor2_min
+xi0 VCC C0 C0B VSS inv_min
+xs0 C0B COMB S0 VCC VSS nor2_min
+xr0 C0B COM R0 VCC VSS nor2_min
+xd0 R0 D0B D0 VCC VSS nor2_min
+xdb0 S0 D0 D0B VCC VSS nor2_min
+.ends
+
+
+* expanding   symbol:  /home/ttuser/Documents/ADCAnalogDesign/nand2.sym # of pins=5
+** sym_path: /home/ttuser/Documents/ADCAnalogDesign/nand2.sym
+** sch_path: /home/ttuser/Documents/ADCAnalogDesign/nand2.sch
+.subckt nand2 A B Y VCC VSS
+*.ipin A
+*.ipin B
+*.opin Y
+*.iopin VCC
+*.iopin VSS
+XM1 Y A VCC VCC sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Y B VCC VCC sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 Y A N1 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 N1 B VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=2 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  /home/ttuser/Documents/ADCAnalogDesign/inverter.sym # of pins=4
+** sym_path: /home/ttuser/Documents/ADCAnalogDesign/inverter.sym
+** sch_path: /home/ttuser/Documents/ADCAnalogDesign/inverter.sch
+.subckt inverter VDD IN out VSS
+*.ipin IN
+*.opin out
+*.iopin VDD
+*.iopin VSS
+XM3 out IN VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 out IN VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  /home/ttuser/Documents/ADCAnalogDesign/SAR_improved/inv_min.sym # of pins=4
+** sym_path: /home/ttuser/Documents/ADCAnalogDesign/SAR_improved/inv_min.sym
+** sch_path: /home/ttuser/Documents/ADCAnalogDesign/SAR_improved/inv_min.sch
+.subckt inv_min VDD IN out VSS
+*.ipin IN
+*.opin out
+*.iopin VDD
+*.iopin VSS
+XM1 out IN VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 out IN VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+
+* expanding   symbol:  /home/ttuser/Documents/ADCAnalogDesign/SAR_improved/nor2_min.sym # of pins=5
+** sym_path: /home/ttuser/Documents/ADCAnalogDesign/SAR_improved/nor2_min.sym
+** sch_path: /home/ttuser/Documents/ADCAnalogDesign/SAR_improved/nor2_min.sch
+.subckt nor2_min A B Y VCC VSS
+*.ipin A
+*.ipin B
+*.opin Y
+*.iopin VCC
+*.iopin VSS
+XM1 N1 A VCC VCC sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Y B N1 VCC sky130_fd_pr__pfet_01v8 L=0.15 W=0.84 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM3 Y A VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+XM4 Y B VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=0.42 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.end
